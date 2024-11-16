@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.nav-buttons{
+    margin-left: 60%;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+ font-family:'Poppins', 'sans-serif';
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+button{
+    font-size: 0.8rem;
+    font-weight: 900;
+    outline: none;
+    border: none;
+    background-color: black;
+    color: aliceblue;
+    padding: 13px 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5 ease;
+}
+
+button:hover{
+    color: antiquewhite;
+    background-color: coral;
+}
+
+.navbar{
+    font-size: 16px;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+    top: 0;
+    left: 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-light .navbar-nav .nav-link{
+    padding: 0 15px;
+    color: black;
+    transition: 0.4s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar i:hover{
+    color: coral;
+}
+
+.navbar i{
+    padding-left: 0 0.7px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+
+@media only screen and (max-width:990px){
+
+    .nav-buttons{
+        margin: 10px;
+    }
+
+    .nav-buttons uk{
+        margin: 1rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: lefts;
+    }
+
+    .nav-buttons ul .fas{
+        margin: 20px 5px 10px 20px;
+    }
+}
+
+
+#home{
+    background-image: url('../imgs/cropped-Cummins_Diesel_Engine_Spare_Parts_From_Stocks.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position-y: 80px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-repeat: no-repeat;
+}
+
+#home h1{
+    color: coral;
+}
+
+
+#home h2{
+    color: coral;
+}
+
+
+#home p{
+    color: coral;
+}
+
+
+#brand img{
+    margin-left: 60px;
+}
+
+#new .one img{
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#new .one{
+    position: relative;
+}
+
+#new .one .details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: coral;
+    font-weight: bold;
+    transition: 0.4s ease;
+    opacity: 0.7;
+    background-color: rgb(1, 2, 3);
+    width: 100%;
+    height: 100%;
+}
+
+
+#new .one:nth-child(1) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#new .one:nth-child(2) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#new .one:nth-child(3) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#new .one .details:hover{
+    background-color: cornsilk;
+}
+
+/* Product */
+
+.product{
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.product img{
+    transition: 0.3s all;;
+}
+
+.product:hover img{
+    opacity: 0.7;
+}
+
+.product .buy-btn{
+    background-color: coral;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 0.3s all;
+}
+
+.product:hover .buy-btn{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+footer{
+    background-color: coral;
+
+}
+
+footer h5{
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+
+}
+
+footer li{
+    padding-bottom: 4px;
+}
+
+footer li a{
+    font-size: 0.8rem;
+    color:white;
+    text-decoration: none;
+}
+
+footer p{
+    color: white;
+}
+
+footer h6{
+    color: white;
+}
+
+footer li a:hover{
+    color: black;
+} 
+
+
+.logo{
+    width: 40px;
+    height: 40px;
+}
+
+.navbar .brand{
+    color: black;
+    margin: 3px 5px;
+    font-size: small;
+    font: 1.5rem;
+    white-space: nowrap;
+}
+
+
+.single-product .size-btn{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.single-product .buy-btn{
+    background-color: black;
+    opacity: 1;
+    transition: 0.4s all;
+}
+
+.single-product .buy-btn:hover{
+    background-color: coral;
+}
+
+/* cart */
+
+.cart table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart .product-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cart th{
+    text-align: left;
+    padding: 5px 10px;
+    color: white;
+    background-color: coral;
+}
+
+.cart td{
+    padding: 10px 20px;
+
+}
+
+.cart td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.cart td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+.cart td a{
+    color: coral;
+}
+
+.cart .remove-btn{
+    color: coral;
+    text-decoration: none;
+    background-color: white;
+    font-size: 15px;
+    border: none;
+    width: 100%;
+}
+
+.cart .edit-btn{
+    color: coral;
+    text-decoration: none;
+    font-size: 15px;
+    background-color: white;
+    border: none;
+}
+
+.cart .product-info p{
+    margin: 3px;
+}
+
+.cart-total{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cart-total table{
+    width: 100%;
+    max-width: 500px;
+    border-top: 3px solid coral;
+}
+
+td:last-child{
+    text-align: right;
+}
+
+th:last-child{
+    text-align: right;
+}
+
+.checkout-btn{
+    background-color: coral;
+    color: white;
+}
+
+.checkout-container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Login */
+
+#login-form{
+    width: 50%;
+    margin: 5px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+#login-form input{
+    width: 50%;
+    margin: 5px auto;
+
+}
+
+#login-form #login-btn{
+    background-color: coral;
+    color: white;
+}
+
+#login-form #register-url{
+    color: coral;
+}
+
+/* Register */
+
+#register-form{
+    width: 50%;
+    margin: 5px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+#register-form input{
+    width: 50%;
+    margin: 5px auto;
+
+}
+
+#register-form #register-btn{
+    background-color: coral;
+    color: white;
+}
+
+#register-form #login-url{
+    color: coral;
+}
+
+
+
+/* Account */
+
+#account-form{
+    width: 50%;
+    margin: 35px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+#account-form input{
+    margin:5px auto;
+}
+
+#account-form #change-pass-btn{
+    color: white;
+    background-color: coral;
+}
+
+.account-info #orders-btn,#logout-btn{
+    color: coral;
+    text-decoration: none;
+}
+
+/* Orders */
+.orders table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.orders .product-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.orders th{
+    text-align: left;
+    padding: 5px 10px;
+    color: white;
+    background-color: coral;
+}
+
+.orders th:nth-child(2){
+    text-align: left;
+}
+
+.orders td{
+    padding: 10px 20px;
+}
+
+.orders td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.orders .order-details-btn{
+    color: white;
+    background-color: coral;
+}
+
+/*Checkout*/
+
+#checkout-form .checkout-small-element{
+    display: inline-block;
+    width: 48%;
+    margin: 10px auto;
+}
+
+#checkout-form .checkout-btn-container{
+    margin:10px;
+    text-align: right;
+    margin-right: 40px;
+}
+
+#checkout-form .checkout-large-element{
+    width: 96%;
+}
+
+#checkout-form #checkout-btn{
+    color: white;
+    background-color: coral;
+}
+
+
+/* Dashboard */
+
+        /* Custom styles for sidebar */
+        .sidebar {
+            height: 100vh;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        .sidebar a {
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .sidebar a:hover {
+            background-color: coral;
+        }
+
+        /* Brand */
+                /* Custom styles for sidebar */
+                .sidebar {
+                    height: 100vh;
+                    overflow-y: auto;
+                }
+                
+                .sidebar a {
+                    text-decoration: none;
+                    padding: 10px;
+                    display: block;
+                    color: #333;
+                }
+                
+                .sidebar a:hover {
+                    background-color: #f8f9fa;
+                    color: #007bff;
+                }
+                
+                .sidebar h3 {
+                    font-size: 1.5rem;
+                    margin-bottom: 1rem;
+                }
+                
+                .sidebar .btn-danger {
+                    width: 100%;
+                }
+                
+                /* Custom styles for the table */
+                .table th, .table td {
+                    vertical-align: middle; /* Align content vertically in the middle */
+                }
+                .brand-description {
+                    width: 30%; /* Set width for brand description */
+                }
+                .actions {
+                    width: 20%; /* Set width for actions */
+                }
